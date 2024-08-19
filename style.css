@@ -1,73 +1,93 @@
 * {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-    background-color: #E4E4E1;
-    background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
-        background-blend-mode: normal, multiply;
-        min-height: 100vh;
+  background-color: #e4e4e1;
+  background-image: radial-gradient(
+      at top center,
+      rgba(255, 255, 255, 0.03) 0%,
+      rgba(0, 0, 0, 0.03) 100%
+    ),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(143, 152, 157, 0.6) 100%
+    );
+  background-blend-mode: normal, multiply;
+  min-height: 100vh;
 }
 
 img {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 p {
-   
-    max-width: 70%;
-    @media( max-width: 450px) {
-        max-width: 100%;
-    }
+  max-width: 70%;
+  @media (max-width: 450px) {
+    max-width: 100%;
+  }
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-   
-    @media( max-width: 450px) {
-        flex-direction: column;
-        width: 90%;
-        margin: auto;
-    }
-  }
-  
-  ul li {
-    background-color: #ecf0f1;
-    padding: 10px 15px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
-  }
-  
-  ul li:hover {
-    background-color: #bdc3c7;
-  }
-  
-  ul li img {
-    margin-right: 10px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #2c3e50;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-  }
-  
-  a:hover {
-    color: #3498db;
-  }
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
 
-  .talk-me {
+  @media (max-width: 450px) {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+ul li {
+  background-color: #ecf0f1;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+ul li:hover {
+  background-color: #bdc3c7;
+}
+
+ul li img {
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+a:hover {
+  color: #3498db;
+}
+
+h1, h2 {
+  @media(max-width: 450px) {
     text-align: center;
-
-    @media (min-width: 500px) {
-        text-align: start;
-    }
   }
+}
+
+.who {
+  @media (max-width: 450px) {
+    text-align: center;
+  }
+}
+
+picture {
+  width: 100%;
+  @media (max-width: 450px) {
+   display: flex;
+   justify-content: center;
+  }
+}
